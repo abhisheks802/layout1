@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    background: rgba(94,229,255,0.2);
+    margin: 0;
+    font-family: Arial;
+}
+a{
+    text-decoration: none;
+}
+header{
+    background: rgba(94,229,255,0.65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+    width: auto;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+header h2{
+    margin: 0 auto;
+    font-size: 27px;
+    order: -1;
+    padding-bottom: 8px;
+}
+li{
+    padding: 10px;
+}
+aside{
+    background: rgba(199,246,255,1);
+}
+aside li{
+    border-bottom: 1px solid black;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.services{
+    order: -1;
+    margin: 5px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    flex-basis: 48%;
+    max-width: 400px;
+}
+.container img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.read{
+    border: 1px solid lightgrey;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    background: lightgrey;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+.read:hover{
+    background: black;
+    color: white;
+}
+h2, h3, p{
+    text-align: center;
+}
+.des{
+    margin-top: -15px;
+}
+
+footer{
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    background: rgba(94,229,255,0.65);
+}
+@media only screen and (min-width: 760px) {
+    header {
+        flex-direction: row;
+        width: auto;
+    }
+    header h2 {
+        order: 0;
+        padding-right: 3vh;
+    }
+
+    .services {
+        order: 0;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container{
+        flex-basis: 32%;
+    }
+    h2, h3, p{
+        text-align: start;
+    }
+    footer h2{
+        text-align: center;
+    }
+    aside{
+        flex: 0 0 17vw;
+    }
+    aside ul{
+        margin-top: 30px;
+    }
+    .main{
+        flex-direction: row;
+    }
+    footer{
+        margin-top: 0;
+    }
+    .read{
+        margin: initial;
+    }
+    .sidebar{
+        align-items: initial;
+    }
+}
